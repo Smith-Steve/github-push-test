@@ -113,6 +113,8 @@ namespace S3CreateAndList
 		public static string GetBucketNameToDelete()
 		{
 			Console.WriteLine("Please enter the name of the bucket that you would like to delete.");
+			Console.WriteLine("\n Also, please note - if the bucket you are looking to delete has contents in it - you will not be able to delete it.");
+			Console.WriteLine("\n Make your entry below:");
 			string bucketToDelete = Console.ReadLine();
 			return bucketToDelete;
 		}
